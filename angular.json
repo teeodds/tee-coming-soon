@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "wts-coming-soon": {
+    "tee-coming-soon": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/wts-coming-soon",
+            "outputPath": "dist/tee-coming-soon",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "wts-coming-soon:build:production"
+              "buildTarget": "tee-coming-soon:build:production"
             },
             "development": {
-              "buildTarget": "wts-coming-soon:build:development"
+              "buildTarget": "tee-coming-soon:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "wts-coming-soon:build"
+            "buildTarget": "tee-coming-soon:build"
           }
         },
         "test": {
